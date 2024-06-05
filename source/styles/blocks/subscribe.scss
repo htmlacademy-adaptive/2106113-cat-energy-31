@@ -1,0 +1,158 @@
+.subscribe__wrapper {
+  width: 100%;
+  text-align: center;
+  padding: 0 20px 40px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__wrapper {
+    padding: 0 30px 80px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .subscribe__wrapper {
+    padding: 96px 110px 104px;
+  }
+}
+
+.subscribe__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  width: max-content;
+  color: #000000;
+  margin: 0 -20px;
+  padding: 0 40px 0 20px;
+  text-align: start;
+  position: relative;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0 40px;
+    margin-bottom: 66px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .subscribe__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 72px;
+  }
+}
+
+.subscribe__wrapper::after {
+  content: "";
+  z-index: -1;
+  background-color: #68b738;
+  height: 2px;
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 1440px) {
+  .subscribe__wrapper::after {
+    top: 116px;
+  }
+}
+
+.subscribe__description {
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  margin: 32px 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__description {
+    font-size: 24px;
+    line-height: 32px;
+    width: 632px;
+    margin: 0 auto 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .subscribe__description {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__form {
+    display: flex;
+    justify-content: center;
+    margin: 0 38px;
+  }
+}
+
+.subscribe__input {
+  font-family: $secondary-font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #444444;
+  height: 56px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  padding-left: 13px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__input {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .subscribe__input {
+    width: 496px;
+  }
+}
+
+.newsletter-button {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter-button {
+    width: 256px;
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .newsletter-button {
+    width: 256px;
+  }
+}
+
+
+.button-primary {
+  @include button-primary($secondary-font, #ffffff, #68B738);
+}
